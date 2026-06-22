@@ -1,0 +1,25 @@
+@media (prefers-color-scheme: dark) {
+    html {
+        background: #111;
+    }
+
+    body.c28,
+    body.doc-content {
+        background-color: #111 !important;
+        color: #eee !important;
+    }
+
+    p, li, h1, h2, h3, h4, h5, h6,
+    span, .title {
+        color: #eee !important;
+    }
+
+    a {
+        color: #8ab4f8 !important;
+    }
+
+    table td,
+    table th {
+        border-color: #555 !important;
+    }
+}
