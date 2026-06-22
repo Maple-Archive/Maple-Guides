@@ -6,13 +6,18 @@
 <title>Maple Guides</title>
 
 <style>
+html {
+    background: #111;
+}
+
 body {
     max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
     font-family: system-ui, sans-serif;
     line-height: 1.5;
-    background: #fff;
+
+    background: transparent;
     color: #222;
 }
 
@@ -34,8 +39,6 @@ h1 {
     padding: 14px 18px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    text-decoration: none;
-    color: inherit;
     margin-bottom: 12px;
     transition: background .15s ease, border-color .15s ease;
 }
@@ -48,8 +51,8 @@ h1 {
     font-weight: 600;
 }
 
-.guide-desc {
-    color: #666;
+.guide-source {
+    margin-top: 4px;
     font-size: 0.9rem;
 }
 
@@ -58,18 +61,12 @@ h1 {
     text-decoration: none;
 }
 
-.guide a:hover {
-    text-decoration: none;
-}
-
 @media (prefers-color-scheme: dark) {
     body {
-        background: #111;
         color: #eee;
     }
 
-    .subtitle,
-    .guide-desc {
+    .subtitle {
         color: #aaa;
     }
 
@@ -80,6 +77,10 @@ h1 {
     .guide:hover {
         background: rgba(255,255,255,0.04);
         border-color: #555;
+    }
+
+    .guide-source {
+        color: #aaa;
     }
 }
 </style>
@@ -100,13 +101,28 @@ h1 {
 
     <div class="guide-source">
         <a href="https://docs.google.com/document/d/1qGre_k2_m68imDiKPzoyEQaVv7XO0RTea0mGct-TXH4"
-           target="_blank">
+           target="_blank" onclick="return confirmSource(event)">
             Source: https://docs.google.com/document/d/1qGre_k2_m68imDiKPzoyEQaVv7XO0RTea0mGct-TXH4
         </a>
     </div>
 </div>
 
 </div>
+
+<script>
+function confirmSource(event) {
+    const proceed = confirm(
+        "Proceed to Google Doc?"
+    );
+
+    if (!proceed) {
+        event.preventDefault();
+        return false;
+    }
+
+    return true;
+}
+</script>
 
 </body>
 </html>
