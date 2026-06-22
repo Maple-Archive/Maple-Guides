@@ -22,6 +22,11 @@
     table th {
         border-color: #555 !important;
     }
+
+    .c69,
+    .c52 {
+        background-color: #1a1a1a !important;
+    }
 }
 
 body.doc-content {
