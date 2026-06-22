@@ -23,3 +23,16 @@
         border-color: #555 !important;
     }
 }
+
+body.doc-content {
+    margin: 30px auto !important;
+    max-width: 900px !important;
+}
+
+p.c14.title {
+    text-align: center !important;
+}
+
+p.c9.title {
+    text-align: center !important;
+}
