@@ -45,3 +45,43 @@ p.c12.title {
 p.c9.title {
     text-align: center !important;
 }
+
+/* Xenon Google Docs export colored backgrounds */
+@media (prefers-color-scheme: dark) {
+    /* Xenon green callouts, including PROS OF XENON / WHY PLAY XENON */
+    .c67, .c148, .c264, .c8, .c80, .c117, .c99, .c174 {
+        background-color: #203d28 !important;
+    }
+
+    /* Xenon blue callouts */
+    .c49, .c216, .c24, .c208, .c224, .c166, .c226, .c116,
+    .c88, .c52, .c139 {
+        background-color: #20384a !important;
+    }
+
+    /* Xenon pink / magenta callouts */
+    .c193, .c98, .c105, .c101, .c138, .c267, .c19,
+    .c23, .c125, .c134, .c84, .c153 {
+        background-color: #402838 !important;
+    }
+
+    /* Xenon peach / red callouts, including CONS OF XENON */
+    .c238 {
+        background-color: #4a2a24 !important;
+    }
+
+    /* Xenon yellow callouts */
+    .c70, .c237, .c194, .c239, .c169, .c69,
+    .c94, .c244, .c188,
+    .c71, .c14, .c89 {
+        background-color: #4a4120 !important;
+    }
+
+    /* Xenon gray / white table backgrounds, including Inner Ability notes */
+    .c58,
+    .c64, .c43, .c30, .c85, .c26, .c53, .c3, .c59, .c92,
+    .c157, .c161, .c120, .c209, .c250, .c203, .c144, .c256, .c202, .c248,
+    .c145, .c154, .c260 {
+        background-color: #1a1a1a !important;
+    }
+}
